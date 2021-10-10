@@ -3,7 +3,7 @@ import { Post } from "./Post/Post";
 
 export const PostContainer = () => {
   return (
-    <div className='mt-5'>
+    <div className='mt-5 mx-10'>
       <Post
         authProfile="http://1.bp.blogspot.com/-rTUlvC7DWKg/VA4P6EF1mII/AAAAAAAAAEk/eC6Wmaj5WlM/s1600/facebook%2Bpicture%2Bnot%2Bclickable.jpg"
         authName="Raisul Islam"

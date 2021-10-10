@@ -1,0 +1,19 @@
+.scroll-design::-webkit-scrollbar{
+    display: none;
+    height: 8px;
+    width: 8px;
+    background-color: rgba(192, 192, 192, 0.508);
+    border-radius: 30px;
+    height: 100px;
+}
+.scroll-design:hover::-webkit-scrollbar{
+    display: block;
+}
+.scroll-design::-webkit-scrollbar-thumb{
+    border-radius: 30px;
+    transition: .5s;
+    background-color: rgba(187, 186, 186, 0);
+}
+.scroll-design:hover::-webkit-scrollbar-thumb{height: 20px;
+    background-color: rgb(35, 123, 255);
+}

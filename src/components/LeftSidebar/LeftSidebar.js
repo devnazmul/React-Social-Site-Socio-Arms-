@@ -23,7 +23,7 @@ import LeftSidebarRow from './LeftSidebarRow/LeftSidebarRow';
 
 const LeftSidebar = () => {
     return (
-        <div className="overflow-y-auto overflow-x-hidden h-full">
+        <div className="scroll-design overflow-y-auto fixed mt-10 pt-5 bg-gray-100 overflow-x-hidden h-full">
             <LeftSidebarRow avater={avater} title='Raisul Islam' />
             <LeftSidebarRow src={messanger} title='Messanger' />
             <LeftSidebarRow src={friends} title='Friends' />

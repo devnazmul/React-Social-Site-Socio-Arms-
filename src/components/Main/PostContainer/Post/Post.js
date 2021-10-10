@@ -16,7 +16,7 @@ export const Post = ({
   timestamp,
 }) => {
   return (
-    <div className=" rounded-md h-auto shadow-md bg-white pt-3 mx-2">
+    <div className="mb-5 rounded-md h-auto shadow-lg bg-white pt-3">
         <div className='flex justify-between items-center px-3 pt-2'>
           <div className="flex items-center  cursor-pointer">
             <Avatar src={authProfile} />

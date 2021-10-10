@@ -4,7 +4,7 @@ import { BiHappy, BiPhotoAlbum, BiVideoPlus } from 'react-icons/bi'
 
 export const PostCreator = () => {
     return (
-        <div className="shadow-md my-5 rounded-lg bg-white mx-2 pt-3 px-4">
+        <div className="shadow-md my-5 rounded-lg bg-white mx-10 pt-3 px-4">
         <div className="flex pb-3">
           <Avatar
             className="mr-3"

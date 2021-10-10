@@ -7,14 +7,14 @@ import RightSidebar from "./components/RightSidebar/RightSidebar";
 
 function App() {
   return (
-    <div className="App bg-gray-100">
-      <BrowserRouter>
+    <div className="App overflow-x-hidden">
+      <BrowserRouter className='bg-gray-100'>
         <Header />
-        <div className='flex bg-gray-100 h-screen'>
-          <div className='md:block hidden  w-1/4'>
+        <div className='flex bg-gray-100'>
+          <div className='md:block hidden w-1/4'>
             <LeftSidebar />
           </div>
-          <div className='w-full md:w-2/4 bg-gray-100'>
+          <div className='w-full md:w-2/4'>
             <Switch>
               <Route exact path="/">
               <Main />

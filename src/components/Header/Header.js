@@ -6,13 +6,14 @@ import { MdGridView, MdOutlineNotificationsNone } from "react-icons/md";
 import { BsController } from "react-icons/bs";
 import logo from '../../icons/fbLogo.svg';
 import avater from '../../img/avater.jpg';
+import { Avatar } from "@material-ui/core";
 
 const Header = () => {
   return (
-    <div className="md:flex justify-between h-auto md:max-h-20 shadow-xl z-10 py-2">
+    <div className="md:flex fixed w-full bg-white justify-between h-auto md:max-h-20 shadow-md z-10 py-2">
       <div className='hidden md:flex w-full md:w-1/4 '>
           <img className='mx-2 ' src={logo} alt="" />
-          <div className='flex w-full text-gray-400 justify-center items-center px-2 bg-gray-300 rounded-full'>
+          <div className='flex w-full text-gray-400 justify-center items-center px-2 bg-gray-200 hover:bg-gray-300 cursor-pointer rounded-full'>
               <AiOutlineSearch className='text-2xl mr-2' />
               <input className='bg-transparent h-full w-full outline-none' placeholder='Search' type="text" />
           </div>
@@ -35,20 +36,20 @@ const Header = () => {
         </NavLink>
       </nav>
       <div className='w-full md:w-1/4 hidden md:flex text-2xl justify-between items-center pr-5'>
-        <NavLink className='flex font-medium text-sm items-center bg-gray-300 p-1 rounded-full text-gray-800' activeClassName='text-blue-500 bg-blue-100' to='/profile'>
-            <img className='object-cover rounded-full max-h-9' src={avater} alt="" />
+        <NavLink className='flex font-medium text-sm items-center bg-gray-200 hover:bg-gray-300 cursor-pointer p-1 rounded-full text-gray-800' activeClassName='text-blue-500 bg-blue-100' to='/profile'>
+            <Avatar style={{ height: '30px', width: '30px' }} src={avater} alt="" />
             <span className='mx-2' >Md Raisul</span>
         </NavLink>
-        <button className='bg-gray-300 p-2 rounded-full text-gray-800'>
+        <button className='bg-gray-200 hover:bg-gray-300 cursor-pointer p-2 rounded-full text-gray-800'>
             <MdGridView/>
         </button>
-        <button className='bg-gray-300 p-2 rounded-full text-gray-800'>
+        <button className='bg-gray-200 hover:bg-gray-300 cursor-pointer p-2 rounded-full text-gray-800'>
             <AiOutlineMessage/>
         </button>
-        <button className='bg-gray-300 p-2 rounded-full text-gray-800'>
+        <button className='bg-gray-200 hover:bg-gray-300 cursor-pointer p-2 rounded-full text-gray-800'>
             <MdOutlineNotificationsNone/>
         </button>
-        <button className='bg-gray-300 p-2 rounded-full text-gray-800'>
+        <button className='bg-gray-200 hover:bg-gray-300 cursor-pointer p-2 rounded-full text-gray-800'>
             <AiFillCaretDown/>
         </button>
       </div>

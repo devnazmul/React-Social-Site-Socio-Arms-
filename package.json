@@ -49,6 +49,10 @@
     "postcss": "^7.0.39",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.16"
   },
+   "engines": {
+    "node": "^14.0.0",
+    "npm": "^6.14.15"
+  },
   "description": "A Social Media Site Based On React And Firebase",
   "main": "index.js",
   "repository": "https://github.com/devraisul/socio-arms",

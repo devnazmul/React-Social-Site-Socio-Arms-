@@ -1,12 +1,14 @@
 .scroll-design::-webkit-scrollbar{
-    display: none;
+    display: block;
+    opacity: 0;
     height: 8px;
     width: 8px;
     background-color: rgba(192, 192, 192, 0.508);
     border-radius: 30px;
-    height: 100px;
 }
 .scroll-design:hover::-webkit-scrollbar{
+    opacity: 1;
+    height: 8px;
     display: block;
 }
 .scroll-design::-webkit-scrollbar-thumb{
@@ -14,6 +16,7 @@
     transition: .5s;
     background-color: rgba(187, 186, 186, 0);
 }
-.scroll-design:hover::-webkit-scrollbar-thumb{height: 20px;
+.scroll-design:hover::-webkit-scrollbar-thumb{
+    width: 8px;
     background-color: rgb(35, 123, 255);
 }

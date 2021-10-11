@@ -10,7 +10,7 @@ import { Avatar } from "@material-ui/core";
 
 const Header = () => {
   return (
-    <div className="md:flex fixed w-full bg-white justify-between h-auto md:max-h-20 shadow-md z-10 py-2">
+    <div className="md:flex fixed w-full bg-white justify-between h-auto md:max-h-20 shadow-md z-20 py-2">
       <div className='hidden md:flex w-full md:w-1/4 '>
           <img className='mx-2 ' src={logo} alt="" />
           <div className='flex w-full text-gray-400 justify-center items-center px-2 bg-gray-200 hover:bg-gray-300 cursor-pointer rounded-full'>

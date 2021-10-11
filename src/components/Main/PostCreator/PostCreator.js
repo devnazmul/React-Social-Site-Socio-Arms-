@@ -7,17 +7,17 @@ export const PostCreator = () => {
         <div className="shadow-md my-5 rounded-lg bg-white mx-10 pt-3 px-4">
         <div className="flex pb-3">
           <Avatar
-            className="mr-3"
+            className="mr-3 cursor-pointer"
             src="http://1.bp.blogspot.com/-rTUlvC7DWKg/VA4P6EF1mII/AAAAAAAAAEk/eC6Wmaj5WlM/s1600/facebook%2Bpicture%2Bnot%2Bclickable.jpg"
           />
           <input
-            className="bg-gray-200 px-5 rounded-full w-2/3 mr-5 outline-none"
+            className="bg-gray-200 px-5 rounded-full w-2/3 mr-3 outline-none"
             placeholder="What's on your mind, Raisul?"
             type="text"
           />
           <input
             className="bg-gray-200 px-5 rounded-full w-1/3 outline-none"
-            placeholder="Put An Image URL"
+            placeholder="Image URL"
             type="text"
           />
         </div>

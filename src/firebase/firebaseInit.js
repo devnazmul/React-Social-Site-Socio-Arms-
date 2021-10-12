@@ -1,12 +1,12 @@
- const firebaseConfig = () => {
-    return({
-    apiKey: "AIzaSyDDCR2a_niD58UjWDtznF2MQhNTobkSj-o",
-    authDomain: "social-arms.firebaseapp.com",
-    projectId: "social-arms",
-    storageBucket: "social-arms.appspot.com",
-    messagingSenderId: "54864108816",
-    appId: "1:54864108816:web:ca642b4b474cddf9cd1995",
-    measurementId: "G-73NG88HYG9"
-  })
-}
-export default firebaseConfig;
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import firebaseConfig from './firebase.config.js'
+
+const appInit = () => {
+    initializeApp(firebaseConfig);
+} 
+const analytics = getAnalytics(initializeApp(firebaseConfig));
+
+export {appInit, analytics};
+

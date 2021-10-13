@@ -2,21 +2,27 @@
     display: block;
     opacity: 0;
     height: 8px;
-    width: 8px;
-    background-color: rgba(192, 192, 192, 0.508);
+    width: 10px;
+    padding: 0 5px;
+    background-color: rgba(192, 192, 192, 0);
     border-radius: 30px;
 }
 .scroll-design:hover::-webkit-scrollbar{
     opacity: 1;
     height: 8px;
     display: block;
+    background-color: rgb(192, 192, 192);
+}
+.scroll-design::-webkit-scrollbar:hover{
+    border: solid rgb(158, 158, 158);
 }
 .scroll-design::-webkit-scrollbar-thumb{
     border-radius: 30px;
     transition: .5s;
-    background-color: rgba(187, 186, 186, 0);
+    background-color: rgba(255, 0, 0, 0);
 }
 .scroll-design:hover::-webkit-scrollbar-thumb{
     width: 8px;
+    margin: 0 5px;
     background-color: rgb(35, 123, 255);
 }

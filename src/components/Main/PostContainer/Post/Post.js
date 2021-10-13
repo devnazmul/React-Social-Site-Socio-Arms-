@@ -14,6 +14,7 @@ export const Post = ({
   postText,
   postImageLink,
   timestamp,
+  postVideoLink
 }) => {
   return (
     <div className="mb-5 rounded-md h-auto shadow-lg bg-white pt-3">
@@ -35,15 +36,9 @@ export const Post = ({
           </span>
         </div>
       )}
-      <div style={{
-            backgroundPosition:'center center',
-            backgroundRepeat:'no-repeat',
-            backgroundSize:'cover',
-            objectFit:'cover',
-            height: "550px",
-            width:'100%',
-            backgroundImage:`url(${postImageLink})`
-        }} className="w-full overflow-hidden">
+      <div className="w-full h-auto overflow-hidden">
+          {postImageLink && <img className='w-full h-auto' src={postImageLink} alt="" />}
+          {postVideoLink && <video className='w-full h-auto' width='100%' height='100%' src={postVideoLink} alt="" controls autoPlay ></video>}
       </div>
       <div className='flex justify-center text-center font-semibold text-xs'>
           <span className='w-1/3 cursor-pointer hover:text-blue-600 border-b py-2'>4.6K Likes</span>

@@ -6,7 +6,7 @@ import { PostContainer } from "./PostContainer/PostContainer";
 
 const Main = () => {
   return (
-    <div className=" w-full mt-10 px-7 bg-gray-100 h-auto pt-5 z-10">
+    <div className=" w-full mt-10 px-0 md:px-7 bg-gray-100 h-auto pt-5 z-10">
       <StoryRill />
       <PostCreator />
       <ActiveStatusRow />

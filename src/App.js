@@ -4,7 +4,7 @@ import { UnAuthenticated } from "./pages/UnAuthenticated/UnAuthenticated";
 
 
 function App() {
-  let isAuthenticated = false;
+  let isAuthenticated = true;
   return (
     <div className="App overflow-x-hidden">
       {isAuthenticated ? <Authenticated /> : <UnAuthenticated />}
